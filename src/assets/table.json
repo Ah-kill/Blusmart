@@ -1,0 +1,62 @@
+[
+  {
+    "productId": 1,
+    "productName": "Abc",
+    "brand": "abc",
+    "category": "abc",
+    "unit" : "piece",
+    "unitCost": 3434,
+    "totalCost": 23232,
+    "productType": "adfa"
+  },
+  {
+    "productId": 2,
+    "productName": "Abc",
+    "brand": "abc",
+    "category": "abc",
+    "unit" : "piece",
+    "unitCost": 3434,
+    "totalCost": 23232,
+    "productType": "adfa"
+  },
+  {
+    "productId": 3,
+    "productName": "Abc",
+    "brand": "abc",
+    "category": "abc",
+    "unit" : "piece",
+    "unitCost": 3434,
+    "totalCost": 23232,
+    "productType": "adfa"
+  },
+  {
+    "productId": 4,
+    "productName": "Abc",
+    "brand": "abc",
+    "category": "abc",
+    "unit" : "piece",
+    "unitCost": 3434,
+    "totalCost": 23232,
+    "productType": "adfa"
+  },
+  {
+    "productId": 5,
+    "productName": "Abc",
+    "brand": "abc",
+    "category": "abc",
+    "unit" : "piece",
+    "unitCost": 3434,
+    "totalCost": 23232,
+    "productType": "adfa"
+  },
+  {
+    "productId": 6,
+    "productName": "Abc",
+    "brand": "abc",
+    "category": "abc",
+    "unit" : "piece",
+    "unitCost": 3434,
+    "totalCost": 23232,
+    "productType": "adfa"
+  }
+]

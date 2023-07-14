@@ -1,0 +1,14 @@
+[
+  {
+    "header": "Operations",
+    "title": "WorkShop Operations",
+    "buttons": ["HandOver to Technician", "Takeover From Technician"],
+    "type": "primary"
+  },
+  {
+    "header": "Stock Transfer",
+    "title": "WorkShop Stock Transfer",
+    "buttons": ["Request Stock Transfer", "Check All Requests"],
+    "type": "secondary"
+  }
+]

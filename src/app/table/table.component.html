@@ -1,0 +1,72 @@
+<div *ngIf="tableData" class="table-container">
+  <form [formGroup]="tableForm">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Product ID</th>
+          <th>Product Name</th>
+          <th>Brand</th>
+          <th>Qty</th>
+          <th>Unit</th>
+          <th>Category</th>
+          <th>Unit Cost</th>
+          <th>Total Cost</th>
+          <th>Product Type</th>
+        </tr>
+      </thead>
+      <tbody formArrayName="quantities">
+        <ng-container
+          *ngFor="let item of tableData; let i = index"
+          formGroupName="{{ i }}"
+        >
+          <tr>
+            <td>{{ item.productId }}</td>
+            <td>{{ item.productName }}</td>
+            <td>{{ item.brand }}</td>
+            <td>
+              <input
+                formControlName="quantity"
+                (change)="onQuantityChange(i)"
+                placeholder="Enter your text"
+                class="custom-input"
+              />
+            </td>
+            <td>{{ item.unit }}</td>
+            <td>{{ item.category }}</td>
+            <td>{{ item.unitCost }}</td>
+            <td>{{ item.totalCost }}</td>
+            <td>{{ item.productType }}</td>
+          </tr>
+          <tr *ngIf="getInputsArray(i).length > 0">
+            <td colspan="9" formArrayName="inputs" class="table__inputs">
+              <p>
+                Since we have to track each piece of this item enter serial no.
+                for each piece down below
+              </p>
+              <div
+                *ngFor="let item of getInputsArray(i).controls; let j = index"
+              >
+                <label>Serial Number {{ j }}</label>
+                <input
+                  formControlName="{{ j }}"
+                  placeholder="Enter Serial Number"
+                  class="custom-input"
+                />
+              </div>
+            </td>
+          </tr>
+        </ng-container>
+      </tbody>
+    </table>
+  </form>
+  <div class="button-container">
+    <button
+      mat-raised-button
+      color="primary"
+      class="bottom-right-button"
+      (click)="submit()"
+    >
+      <span class="button-text">Proceed &gt;</span>
+    </button>
+  </div>
+</div>

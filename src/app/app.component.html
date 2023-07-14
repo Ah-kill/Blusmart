@@ -1,0 +1,32 @@
+<app-header></app-header>
+<div class="heading">
+  <div>Operarational Task</div>
+  <div class="header-dropdowns">
+    <div class="dropdown">
+      <div>Showing entries for</div>
+      <select class="select">
+        <option value="">All Workshop</option>
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+        <option value="option3">Option 3</option>
+      </select>
+    </div>
+    <div class="dropdown">
+      <div>Date range applied</div>
+      <select class="select">
+        <option value="">Today</option>
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+        <option value="option3">Option 3</option>
+      </select>
+    </div>
+  </div>
+</div>
+
+<div class="cards" *ngIf="cardData.length">
+    <app-card [cardData]="cardData[0]" [type]="cardData[0].type"></app-card>
+    <app-card [cardData]="cardData[1]" [type]="cardData[1].type"></app-card>
+</div>
+<div class="heading">User Activity</div>
+<app-table [tableData]="tableData"></app-table>
+

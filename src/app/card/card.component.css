@@ -1,0 +1,183 @@
+.card {
+  min-height: 40vh;
+  max-height: fit-content;
+  background-color: white;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 16px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.card-title {
+  font-size: 22px;
+  line-height: 4vh;
+  font-weight: 500;
+  text-align: center;
+
+}
+.card-header {
+  font-size: 20px;
+  text-align: center;
+  padding: 1vh;
+  border-radius: 50px;
+  margin-top: 1vh;
+  text-transform: capitalize;
+}
+
+.card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.card-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.btn {
+  margin: 4px;
+  padding: 16px;
+  font-size: 14px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.card-header__box {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+.card.primary {
+  border-bottom: 4px solid #009583;
+}
+
+.primary .card-header {
+  color: #009583;
+  background-color: rgb(229 244 243);
+}
+
+.primary .card-title {
+  color: #009583;
+}
+.primary .btn {
+  background-color: white;
+  border: 1px solid #009583;
+  color: #009583;
+}
+
+.card.primary:hover {
+  background-color: #009583;
+}
+.card.primary:hover .card-title {
+  color: white;
+}
+.card.primary:hover .card-header {
+  color: white;
+  background-color: #0ea593;
+}
+.card.primary:hover .btn{
+  color: white;
+  background-color: #009583;
+  border: 1px solid white;
+}
+
+.card.primary .btn:hover{
+  color: #009583;
+  background-color: white;
+  border: 1px solid #009583;
+}
+
+
+
+.card.secondary {
+  border-bottom: 4px solid #8130f2; 
+}
+
+.secondary .card-header {
+  color: #8130f2;
+  background-color:#e8d9fd;
+}
+
+.secondary .card-title {
+  color: #8130f2;
+}
+.secondary .btn {
+  background-color: white;
+  border: 1px solid #8130f2;
+  color: #8130f2;
+}
+
+.card.secondary:hover {
+  background-color: #8130f2;
+}
+.card.secondary:hover .card-title {
+  color: white;
+}
+.card.secondary:hover .card-header {
+  color: white;
+  background-color: #442176;
+}
+.card.secondary:hover .btn{
+  color: white;
+  background-color: #8130f2;
+  border: 1px solid white;
+}
+
+.card.secondary .btn:hover{
+  color: #8130f2;
+  background-color: white;
+  border: 1px solid #8130f2;
+}
+
+
+
+
+
+
+
+
+
+.takeover-card {
+  border-bottom: 4px solid #8130f2;
+}
+.takeover:hover {
+  background-color: #8130f2;
+}
+.takeover-header {
+  color: #8130f2;
+  background-color: rgb(229 244 243);
+}
+.card:hover .takeover-header {
+  color: white;
+  background-color: #9656f0;
+}
+.takeover-title {
+  color: #8130f2;
+}
+.card:hover .takeover-title {
+  color: white;
+}
+.takeover-button {
+  background-color: white;
+  border: 1px solid #8130f2;
+  color: #8130f2;
+}
+.card:hover .takeover-button {
+  color: white;
+  background-color: #8130f2;
+  border: 1px solid white;
+}
+
+
+
+
